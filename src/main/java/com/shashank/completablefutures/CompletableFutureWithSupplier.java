@@ -1,5 +1,6 @@
 package com.shashank.completablefutures;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Supplier;
 
@@ -10,6 +11,7 @@ public class CompletableFutureWithSupplier {
         CompletableFuture<String> completableFuture = CompletableFuture.supplyAsync(supplier);
         String string = completableFuture.join();
         System.out.println("result " + string);
+
 
     }
 }
